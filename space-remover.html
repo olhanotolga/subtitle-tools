@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redundant space remover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Let's find and remove redundant spaces!</h1>
+      </header>
+      
+      <main>
+        <section>
+          <label for="uncheckedInput">Paste your text here:</label>
+          <textarea name="uncheckedInput" id="uncheckedInput" cols="30" rows="10"></textarea>
+        </section>
+      
+        <section>
+          <label for="checkedOutput">Here is your text fixed:</label>
+          <textarea name="checkedOutput" id="checkedOutput" cols="30" rows="10" readonly></textarea>
+        </section>
+        
+        <p id="comment"></p>
+      </main>
+      
+      <button>Process</button>
+      
+      <footer>
+        <p>This tool removes repeating spaces between words, as well as spaces before periods, commas, colons, and semicolons!</p>
+      </footer>
+
+      <script src="space-remover.js"></script>
+</body>
+</html>

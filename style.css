@@ -1,0 +1,72 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+header, footer {
+    text-align: center;
+    padding: 0 2em;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em auto;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 45%;
+    margin: 0 calc(10% / 4);
+    text-align: center;
+}
+.card {
+    border: 2px solid darkslategrey;
+    padding: 2em;
+    justify-content: space-evenly;
+}
+label, .label {
+    margin: 0 0 1em 0;
+    font-size: 120%;
+}
+#checkedOutput {
+    height: 100%;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 3px;
+    padding: 0 .5em;
+}
+ul {
+    text-align: start;
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
+    list-style-position: inside;
+}
+li {
+    padding: .5em;
+}
+button {
+    display: block;
+    margin: 2em auto;
+    padding: .2em .5em;
+}
+button a {
+  text-decoration: none;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+footer p {
+    margin-top: 0;
+}
+a {
+    color: darkslategray;
+}
+.correct {
+    background-color: lightgreen;
+}
+.error {
+    background-color: lightsalmon;
+}
