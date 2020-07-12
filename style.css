@@ -69,15 +69,17 @@ button {
     border-radius: 3px;
     font-weight: bold;
     letter-spacing: 1px;
-    color: darkslategrey;
+    background-color: darkslategrey;
+    color: white;
     font-size: 120%;
 }
 button a {
   text-decoration: none;
+  color: white;
 }
 button:hover, button:hover a {
-    background-color: darkslategrey;
-    color: white;
+    background-color: white;
+    color: darkslategrey;
 }
 footer {
     display: flex;
