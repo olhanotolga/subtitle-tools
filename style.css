@@ -2,15 +2,22 @@
     font-family: monospace;
     box-sizing: border-box;
 }
+body {
+    width: 95%;
+    margin: auto;
+}
 header, footer {
     text-align: center;
-    padding: 0 2em;
+    padding: 1em 2em;
+}
+header {
+    margin-top: 2em;
 }
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 2em auto;
+    margin: 1em auto;
 }
 section {
     display: flex;
@@ -22,6 +29,7 @@ section {
 }
 .card {
     border: 2px solid darkslategrey;
+    border-radius: 3px;
     padding: 2em;
     justify-content: space-evenly;
 }
@@ -29,9 +37,17 @@ label, .label {
     margin: 0 0 1em 0;
     font-size: 120%;
 }
+textarea {
+    border-image: none;
+    border: 2px solid darkslategrey;
+    border-radius: 3px;
+}
+div#checkedOutput {
+    min-height: 5em;
+}
 #checkedOutput {
     height: 100%;
-    border: 1px solid rgb(118, 118, 118);
+    border: 2px solid darkslategrey;
     border-radius: 3px;
     padding: 0 .5em;
 }
@@ -48,9 +64,20 @@ button {
     display: block;
     margin: 2em auto;
     padding: .2em .5em;
+    border-image: none;
+    border: 2px solid darkslategrey;
+    border-radius: 3px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: darkslategrey;
+    font-size: 120%;
 }
 button a {
   text-decoration: none;
+}
+button:hover, button:hover a {
+    background-color: darkslategrey;
+    color: white;
 }
 footer {
     display: flex;
@@ -62,11 +89,30 @@ footer p {
     margin-top: 0;
 }
 a {
-    color: darkslategray;
+    color: darkslategrey;
 }
 .correct {
     background-color: lightgreen;
 }
 .error {
     background-color: lightsalmon;
+}
+@media (max-width: 450px) {
+    section {
+        width: 90%;
+        margin: auto;
+    }
+    section:nth-child(1) {
+        margin-bottom: 2em;
+    }
+}
+@media (min-width: 1000px) {
+    body {
+        width: 80%;
+        margin: auto;
+        font-size: 130%;
+    }
+    button {
+        font-size: 120%;
+    }
 }
