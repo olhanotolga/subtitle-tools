@@ -4,7 +4,6 @@ const inputField = document.getElementById("uncheckedInput");
 const outputField = document.getElementById("checkedOutput");
 
 const checkBtn = document.querySelector("button");
-const comment = document.getElementById("comment");
 
 // EXPRESSIONS:
 const fullTimecodeExpression = /\d+[\n\r(\n\r)](\d+:\d+:\d+,\d+)\s-->\s(\d+:\d+:\d+,\d+)/gm;
