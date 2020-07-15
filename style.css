@@ -67,7 +67,7 @@ section ul li {
 button {
     display: block;
     margin: 2em auto;
-    padding: .2em .5em;
+    padding: .2em .5em .3em;
     border-image: none;
     border: 2px solid darkslategrey;
     border-radius: 3px;
@@ -78,13 +78,20 @@ button {
     font-size: 120%;
     outline: none;
 }
+button>p {
+    margin: 0;
+}
 button a {
   text-decoration: none;
   color: white;
+  outline: none;
 }
-button:hover, button:hover a {
+button:hover, button:hover a, button:active a, button:hover p, button:active p {
     background-color: white;
     color: darkslategrey;
+}
+button:active {
+    background: repeating-linear-gradient(45deg, white, white 5px, white 7px, darkslategrey 7px, darkslategrey 9px);
 }
 #comment {
     text-align: center;
