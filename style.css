@@ -56,12 +56,16 @@ div#checkedOutput {
     padding: 0 .5em;
 }
 ul {
-    text-align: start;
     padding-inline-start: 1em;
     padding-inline-end: 1em;
     list-style-position: inside;
 }
-li {
+section ul {
+    text-align: start;
+    
+    
+}
+section ul li {
     padding: .5em;
 }
 button {
