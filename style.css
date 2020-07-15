@@ -55,15 +55,11 @@ div#checkedOutput {
     border-radius: 3px;
     padding: 0 .5em;
 }
-ul {
+section ul {
     padding-inline-start: 1em;
     padding-inline-end: 1em;
     list-style-position: inside;
-}
-section ul {
     text-align: start;
-    
-    
 }
 section ul li {
     padding: .5em;
@@ -88,6 +84,13 @@ button a {
 button:hover, button:hover a {
     background-color: white;
     color: darkslategrey;
+}
+#comment {
+    text-align: center;
+    width: auto;
+    padding: .5em;
+    margin: 1em auto;
+    background-color: lightgreen;
 }
 footer {
     display: flex;

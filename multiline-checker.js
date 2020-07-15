@@ -22,7 +22,6 @@ const checkForThreeOrMoreLines = () => {
         outputField.appendChild(ul);
 
         label.textContent = `The following subtitles have more than 2 lines:`;
-        label.classList.add("error");
         
         for (let i = 0; i < subtitlesArrayLength; i++) {
             let newItem = document.createElement("li");
@@ -44,7 +43,6 @@ const checkForThreeOrMoreLines = () => {
 const clearOutput = () => {
     outputField.innerHTML = "";
     label.classList.remove("correct");
-    label.classList.remove("error");
 }
 
 checkBtn.addEventListener("click", () => {
