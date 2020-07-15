@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiline checker</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Let's check if you have subtitles with 3 or more lines!</h1>
+      </header>
+      
+      <main>
+        <section>
+          <label for="uncheckedInput">Paste your subtitles:</label>
+          <textarea name="uncheckedInput" id="uncheckedInput" cols="30" rows="20"></textarea>
+        </section>
+      
+        <section>
+          <p class="label">See the summary here:</p>
+          <div id="checkedOutput"></div>
+        </section>
+        
+      </main>
+      
+      <button>Check</button>
+      
+      <footer>
+        <p>This tool checks if any of your subtitles have over 2 lines. If yes, it displays such subtitles in the output area</p>
+        <p>Currently, it works <strong>only</strong> with the <strong><a href="https://en.wikipedia.org/wiki/SubRip" target="_blank" rel="noopener noreferrer">SubRip Text format (.srt)</a></strong>.</p>
+      </footer>
+
+      <script src="multiline-checker.js"></script>
+</body>
+</html>
