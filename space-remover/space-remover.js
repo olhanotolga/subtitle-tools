@@ -17,7 +17,7 @@ processBtn.addEventListener("click", function(){
   let multipleLength = input.match(multipleSpaces).length;
   let unnecessaryLength = input.match(unnecessarySpaces).length;
   if (multipleLength || unnecessaryLength) {
-    let info = input.match(multipleSpaces).length + input.match(unnecessarySpaces).length;
+    let info = multipleLength + unnecessaryLength;
     comment.textContent = `Fixed: ${info} instances of redundant spaces.`;
   } else {
     comment.textContent = `No critically redundant spaces found.`;
