@@ -16,7 +16,7 @@ processBtn.addEventListener("click", function(){
   // display information on errors in the input:
   let multipleLength = input.match(multipleSpaces).length;
   let unnecessaryLength = input.match(unnecessarySpaces).length;
-  if (multipleLength !== 0 || unnecessaryLength !== 0) {
+  if (multipleLength || unnecessaryLength) {
     let info = input.match(multipleSpaces).length + input.match(unnecessarySpaces).length;
     comment.textContent = `Fixed: ${info} instances of redundant spaces.`;
   } else {
