@@ -125,6 +125,9 @@ a {
     section:nth-child(1) {
         margin-bottom: 2em;
     }
+    .card:nth-child(1), .card:nth-child(2) {
+        margin-bottom: 2em;
+    }
 }
 @media (max-width: 550px) {
     .card {
