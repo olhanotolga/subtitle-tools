@@ -14,8 +14,14 @@ processBtn.addEventListener("click", function(){
   // display output:
   outputField.value = output;
   // display information on errors in the input:
-  let info = input.match(multipleSpaces).length + input.match(unnecessarySpaces).length;
-  comment.textContent = `Fixed: ${info} instances of redundant spaces.`;
+  let multipleLength = input.match(multipleSpaces).length;
+  let unnecessaryLength = input.match(unnecessarySpaces).length;
+  if (multipleLength !== 0 || unnecessaryLength !== 0) {
+    let info = input.match(multipleSpaces).length + input.match(unnecessarySpaces).length;
+    comment.textContent = `Fixed: ${info} instances of redundant spaces.`;
+  } else {
+    comment.textContent = `No critically redundant spaces found.`;
+  }
   comment.classList.add('correct');
 });
 
