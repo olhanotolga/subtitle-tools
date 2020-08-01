@@ -96,6 +96,17 @@ const compareTimecodeOrder = () => {
     }
 }
 
+// 4 — show the number of timecodes
+const showTimecodesCount = () => {
+    let input = inputField.value;
+    let timecodesArr = input.match(fullTimecodeExpression);
+    let timecodesArrayLength = timecodesArr.length;
+
+    const comment = document.getElementById("comment");
+    comment.textContent = `Total number of timecodes: ${timecodesArrayLength}`
+    comment.classList.remove("hidden");
+}
+
 const clearOutput = () => {
     outputField.innerHTML = "";
 }
@@ -105,5 +116,6 @@ checkBtn.addEventListener("click", () => {
     compareStartEndTimes();
     compareTimecodeNumbers();
     compareTimecodeOrder();
+    showTimecodesCount();
 });
 
