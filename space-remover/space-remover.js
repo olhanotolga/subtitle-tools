@@ -54,6 +54,7 @@ processBtn.addEventListener("click", function(){
   } else {
     comment.textContent = `No critically redundant spaces found.`;
   }
-  comment.classList.add('correct');
+  comment.classList.add('correct')
+  comment.classList.remove('hidden');
 });
 

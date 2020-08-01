@@ -99,6 +99,9 @@ button:active {
     padding: .5em;
     margin: 1em auto;
 }
+.hidden {
+    display: none;
+}
 footer {
     display: flex;
     flex-direction: column;
@@ -118,6 +121,9 @@ a {
     background-color: lightsalmon;
 }
 @media (max-width: 450px) {
+    main {
+        flex-direction: column;
+    }
     section, .card {
         width: 90%;
         margin: auto;
