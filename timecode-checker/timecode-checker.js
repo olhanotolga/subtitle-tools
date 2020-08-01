@@ -103,7 +103,7 @@ const showTimecodesCount = () => {
     let timecodesArrayLength = timecodesArr.length;
 
     const comment = document.getElementById("comment");
-    comment.textContent = `Total number of timecodes: ${timecodesArrayLength}`
+    comment.textContent = `Total number of subtitles (by timecodes): ${timecodesArrayLength}`
     comment.classList.remove("hidden");
 }
 
