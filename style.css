@@ -76,15 +76,13 @@ button {
     background-color: darkslategrey;
     color: white;
     font-size: 120%;
-    outline: none;
 }
 button>p {
     margin: 0;
 }
 button a {
-  text-decoration: none;
-  color: white;
-  outline: none;
+    text-decoration: none;
+    color: white;
 }
 button:hover, button:hover a, button:active a, button:hover p, button:active p {
     background-color: white;
