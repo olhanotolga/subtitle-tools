@@ -13,17 +13,24 @@ header, footer {
 header {
     margin-top: 2em;
 }
+header a {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 0.5rem 0.5rem 0.8rem;
+    border-radius: 3px;
+}
+header a:hover {
+    color: white;
+    background-color: darkslategrey;
+}
 .fps-section {
     padding: 0.5rem 1.5rem 1.5rem;
-    border: 2px solid darkslategrey;
     border-radius: 3px;
-    background-image: repeating-linear-gradient(45deg, darkslategrey, darkslategrey 5px, darkslategrey 7px, white 7px, white 9px);
+    background-color: darkslategrey;
 }
 .fps-section h2 {
-    background-color: white;
-    border: 2px solid darkslategrey;
-    border-radius: 3px;
-    font-weight: 400;
+    color: white;
     width: fit-content;
     margin: 0.8rem auto;
     padding: 0.5rem 1.5rem 0.8rem;
