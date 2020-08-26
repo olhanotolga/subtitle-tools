@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frames to milliseconds</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Let's change frames to milliseconds!</h1>
+      <div class="fps-section">
+        <h2>What's the frame rate (fps)?</h2>
+        <input id="framerate-input" type="number" name="framerate" />
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <label for="uncheckedInput">Paste your subtitles (timecodes end with frames) here:</label>
+        <textarea
+          name="uncheckedInput"
+          id="uncheckedInput"
+          cols="30"
+          rows="20"
+        ></textarea>
+      </section>
+
+      <section>
+        <label for="checkedOutput">Here are your new subtitles (timecodes end with milliseconds):</label>
+        <textarea
+          name="checkedOutput"
+          id="checkedOutput"
+          cols="30"
+          rows="20"
+          readonly
+        ></textarea>
+      </section>
+
+      <p id="comment"></p>
+    </main>
+
+    <button>
+      <p>Process</p>
+    </button>
+
+    <footer>
+      <p>
+        This tool converts frames into milliseconds and replaces them in the
+        text.
+      </p>
+    </footer>
+
+    <script src="./fps-ms-converter.js"></script>
+  </body>
+</html>
